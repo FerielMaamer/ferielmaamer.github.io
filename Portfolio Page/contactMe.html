@@ -5,13 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         </head>
 <body>
     <div id="home">
         <!-- navigation start -->
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +20,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About Me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="myProjects.html">My Projects</a>
@@ -27,57 +31,52 @@
               <li class="nav-item">
                   <a class="nav-link" href="contactMe.html">Contact Me</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
             </ul>
           </div>
         </nav>
     </div>
-          <!-- navigation end -->
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Linkedin -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+<!-- navigation end -->
+<!-- contact start -->
+    <div id="contact" class="container w-50 mx-auto mt-5 mb-7">
+        <div class="post-heading text-center">
+          <h3 class="display-4 font-weight-bold">Contact Us</h3>
+          <hr class="w-50 mx-auto pb-5">
+        </div>
+        <form >
+          <div class="form-group">
+            <label for="email">Full Name:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <textarea class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send</button>
+        </form>
+      </div>
+<!-- contact end -->
+    <footer class="text-center" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/feriel-maamer"
+            role="button" data-mdb-ripple-color="dark" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/FerielMaamer" role="button"
+            data-mdb-ripple-color="dark" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
       
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
