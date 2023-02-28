@@ -68,6 +68,3 @@
   typewriter = setupTypewriter(typewriter);
 
   typewriter.type();
-
-  /* ------------------------------testing area------------------------------------ */
-  
