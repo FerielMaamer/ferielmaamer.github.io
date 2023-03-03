@@ -489,3 +489,6 @@ aside,
 a:target {
   color: red;
 }
+ul li{
+  text-decoration: none;
+}
