@@ -489,3 +489,12 @@ aside,
 a:target {
   color: red;
 }
+
+.hidden {
+  display: none;
+}
+
+button{
+  background-color: #A7727D;
+  width: 70%;
+}
