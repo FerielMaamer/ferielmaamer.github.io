@@ -69,25 +69,20 @@
                     </div>
                     <div id="wireframes" style="display: none;">
                         <iframe src="images/capstone/mockup.pdf" height="600" width="100%"></iframe>
-                    </div>
-                    <div id="statusReport" style="display: none;">
-                        <iframe src="images/6417bfcf1124f-doc.pdf" height="600" width="100%"></iframe>
-                    </div>
+                    </div> 
                 </div>
-                <div class="col" style="padding: 10px; margin-top: 5%;">
-                    <button onclick="myFunction('projectSummary')">Project Summary</button>
+                <div  class="col" role="group" style="padding: 10px; margin-top: 5%;">
+                    <button type="button" onclick="myFunction('projectSummary')">Project Summary</button>
                     <hr>
-                    <button onclick="myFunction('projectVision')">Project Vision</button>
+                    <button type="button" onclick="myFunction('projectVision')">Project Vision</button>
                     <hr>
-                    <button onclick="myFunction('projectPlan')">Project Plan</button>
+                    <button type="button" onclick="myFunction('projectPlan')">Project Plan</button>
                     <hr>
-                    <button onclick="myFunction('requirements')">Requirements Analysis and Design</button>
+                    <button type="button" onclick="myFunction('requirements')">Requirements Analysis and Design</button>
                     <hr>
-                    <button onclick="myFunction('wireframes')">Wireframes/Mock ups</button>
+                    <button type="button" onclick="myFunction('wireframes')">Wireframes/Mock ups</button>
                     <hr>
-                    <button onclick="myFunction('statusReport')">Status Reports</button>
-                    <hr>
-                    <button onclick="myFunction('implementation')">System Implementation</button>
+                    <button type="button" onclick="myFunction('implementation')">System Implementation</button>
                     <hr>
                     <a href="https://brilliant-denistry.vercel.app/" target="_blank" style="text-decoration: none; color:white;">Demo of Website</a>
                 </div>
@@ -119,14 +114,22 @@
         
         
         <script>
-            
+            const Ids = ['projectSummary', 'projectVision', 'projectPlan', 'requirements']
             function myFunction(element) {
+                for (id in Ids) {
+                    if(id!=element){
+                        document.getElementById(id).style.display = "none";
+                    }                    
+                }
                 var x = document.getElementById(element);
                 if (x.style.display === "none") {
+                    
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
                 }
+                
+                
             }
         </script>
 

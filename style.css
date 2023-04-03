@@ -498,3 +498,14 @@ button{
   background-color: #A7727D;
   width: 70%;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  min-height: 120vh;
+  margin-bottom: 100px;
+  clear: both;
+}
